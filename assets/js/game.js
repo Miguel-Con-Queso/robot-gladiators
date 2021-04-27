@@ -8,6 +8,8 @@ var enemyName = "Roborto";
 var enemyHealth = 10;
 var enemyAttack = 12;
 
+console.log(enemyName, enemyHealth, enemyAttack);
+
 // create function
 var fight = function() {
     // Alert players that they are starting the round
@@ -15,7 +17,8 @@ var fight = function() {
 
 var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
     // if player choses to fight, then fight
-    if (prompFight === "fight" || promptFight === "FIGHT") {
+    console.log(promptFight);
+    if (promptFight === "fight" || promptFight === "FIGHT") {
         // remove enemy's health by subtracting the amount set in the playerAttack variable
         enemyHealth = enemyHealth - playerAttack;
         console.log(
@@ -42,11 +45,11 @@ var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? En
             window.alert(playerName + " still has " + playerHealth + " health left.");
         }
         //if player choses to skip
-      } else if (promptFight === "skip" || promptFight === "SKIP") {
+    } else if (promptFight === "skip" || promptFight === "SKIP") {
         window.alert(playerName + " has chosen to skip the fight!");
-      } else {
+    } else {
         window.alert("You need to choose a valid option. Try again!");
-      }
+    }
 }
 
 // execute function
