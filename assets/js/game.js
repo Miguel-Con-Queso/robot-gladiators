@@ -1,29 +1,22 @@
-// Game States
-//"WIN" - Player robot has defeated all enemy-robots
-//  *Fight all enemy-robots
-//  *Defeat each enemy-robot
-// "LOSE" - Player robot's health is zero or less
 
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
-console.log(playerName, playerAttack, playerHealth);
-
-var enemyHealth = 10;
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+var enemyHealth = 50;
 var enemyAttack = 12;
 
-var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+var fight = function(enemyName) { enemyName = "Amy Android"}
+
 console.log(enemyNames.length);
 for(var i = 0; i < enemyNames.length; i++) {
     console.log(enemyNames[i]);
     console.log(i);
     console.log(enemyNames[i] + " is at " + i + " index");
 
-    debugger;
-    fight(enemyName);
-}
+
 // create function
 var fight = function(enemyName) {
     // repeat and execute as long as the enemy-robot is alive
@@ -75,6 +68,4 @@ var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? En
 
 for(var i = 0; i < enemyNames.length; i++) {
     fight(enemyNames[i]);
-}
-
-// fight();
+};
