@@ -68,4 +68,4 @@ var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? En
 
 for(var i = 0; i < enemyNames.length; i++) {
     fight(enemyNames[i]);
-};
+}
