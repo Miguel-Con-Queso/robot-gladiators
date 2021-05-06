@@ -33,11 +33,6 @@ var fightOrSkip = function() {
       // return true if player wants to leave
       return true;
     }
-    else {
-      window.alert(playerInfo.name + " has decided to square up.");
-
-      return false;
-    }
   }
 }
 
